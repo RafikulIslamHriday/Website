@@ -1,0 +1,634 @@
+ *{
+    box-sizing:border-box;
+ }
+@media print{
+   form{
+      background-color: rgba(25, 197, 91, 0.98);
+      width: 600px;
+      font-size: 35px;
+   }
+}
+
+
+@media screen {
+   form{
+      font-size: 22px;
+      color: rgb(23, 152, 156);
+   }
+}
+
+
+
+ body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:15px 38px ;
+    padding: 8px;
+ }
+ .container1{
+    background-color: rgba(238, 243, 247, 0.986);
+    padding: 30px 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-bottom: 150px;
+    width: 800px;
+ }
+
+ input[type="text"],
+ input[type="email"],
+ input[type="numbers"],
+ input[type="date"],
+ input[type="password"],
+ select{
+    width: 70%;
+    padding: 10px;
+    margin: 10px 15px;
+    border: 1px sloid #ccc;
+    border-radius: 5px;
+ }
+
+ fieldset{
+   background-color: #fff;
+   border: 1px sloid #ccc;
+   border-radius: 5px;
+   width: 70%;
+   padding: 10px;
+   margin: 10px 15px;
+ }
+ .main_hadding{
+   text-align: center;
+ }
+
+
+
+
+ /* float */
+
+ #img{
+   float: left;
+   margin: 15px;
+   width: 150px;
+   height: 150px;
+   border-radius: 10px;
+   background-color: rgb(51, 143, 173);
+   padding: 8px;
+ }
+
+ .clear{
+   clear:left;
+   margin-left: 18px;
+ }
+
+ .float{
+   margin-bottom: 250px;
+ }
+
+
+ /* positioning */
+
+.box-set,.box{
+   border-radius: 15px;
+}
+
+.box-set{
+   background-color: whitesmoke;
+   margin-bottom: 150px;
+   padding: 20px;
+}
+
+.box{
+   background-color: lightblue;
+   height: 100px;
+   width: 100px;
+   text-align: center; 
+   margin: 15px;
+   position:relative;
+   top: 2px;
+   left: 350px;
+}
+
+
+
+
+/* flex box */
+
+.flex-container{
+   width: 800px;
+   height: 200px;
+   border: 2px solid rgb(1, 110, 110);
+
+   display:flex;
+   justify-content:space-evenly;
+  
+}
+
+
+.flex-item{
+   width: 75px;
+   height: 75px;
+   background-color: lightblue;
+   border: 2px solid darkcyan;
+   text-align: center;
+   color: white;
+   font-weight: bold;
+    line-height:4 ;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+ 
+#flex-item-1{
+   
+   background-color: rgb(145, 224, 198);
+}
+ 
+#flex-item-2{
+   background-color: rgb(115, 226, 189);
+}
+
+#flex-item-3{
+   background-color: rgb(85, 216, 172);
+}
+
+#flex-item-4{
+   background-color: rgb(53, 218, 163);
+}
+
+#flex-item-5{
+   background-color: rgb(25, 202, 143);
+}
+
+
+
+
+/* flex box challenge */
+
+.main-container{
+   display: flex;
+   flex-direction: column;
+   width: 95%;
+   height:95%;
+   
+   
+    margin: 50px 0px;
+   
+}
+
+.main-container div{
+   
+   margin: 2px ,1px;
+   
+   
+}
+
+
+
+.row1-flex{
+   display: flex;
+   
+}
+.row1-flex div{
+   background-color: rgb(91, 209, 224);
+   margin: 2px;
+   width: 33.3%;
+   border-radius: 5px;
+   text-align: start;
+   padding: 0px 3px;
+   
+    
+}
+
+
+
+
+
+.row2-flex{
+   display: flex;
+}
+ 
+.row2-flex div{
+    background-color: rgb( 91, 209, 224);
+   margin: 2px;
+   width:25%;
+   height: 100% ;
+   border-radius: 5px;
+   padding: 0px 5px;
+   
+}
+
+
+
+
+
+
+.row3-flex{
+   display: flex;
+}
+ 
+.row3-flex div{
+   background-color: rgb(  91, 209, 224);
+   margin: 2px;
+   width: 20%;
+   height: 100% ;
+   border-radius: 5px;
+   
+   padding: 0px 5px;
+    
+}
+
+
+
+
+.row1-flex1{
+   display: flex;
+   flex-direction: column;
+   height: 25%;
+   width: 100%;
+        
+}
+.row1-flex1 div{
+   background-color: rgb(  91, 209, 224);
+     
+   width: 100%;
+   height: 100%;
+    
+   
+}
+
+ 
+
+.flex1-row1{
+   display: flex;
+}
+.flex1-row1 div{
+   background-color: rgb(75, 161, 118);
+   margin:1px 2px;
+   
+}
+
+.flex1-row2{
+   display:flex;
+}
+.flex1-row2 div{
+   background-color: rgb( 75, 161, 118);
+   margin:1px 2px;
+    
+   
+   
+}
+
+
+
+
+.flex1-row3{
+   display: flex;
+    
+}
+
+.flex1-row3 div{
+   background-color: rgb( 75, 161, 118);
+   margin: 1px 2px;
+   
+}
+
+
+/* flex box challenge 2 start */
+
+.card{
+   display: flex;
+    
+   flex-direction: column;
+   border: none;
+   margin: 100px auto;
+   background-color: rgb(209, 231, 231);
+   border-radius: 15px;
+   padding: 15px 0px;
+}
+
+.card-container{
+   width: 1000px;
+   height:450px;
+   margin: 50px auto;
+   display: flex;
+   justify-content: space-between;
+}
+
+.cards-parent{
+   width: 320px;
+   height: 465px;
+   background-color: #fff;
+   box-shadow: 4px 4px 10px gray;
+   border-radius: 10px;
+   
+   
+}
+
+.card-doc{
+   padding: 0px 15px;
+   padding-top: 20px;
+}
+
+.btn{
+    
+   margin-top: 25px;
+   
+   
+}
+#card1-btn{
+   margin-top: -1px;
+   margin-bottom: 25px;
+}
+
+.card-img img{
+   max-width: 100%;
+    
+  
+}
+
+#card3-img img{
+   height: 215px;
+}
+
+#cards-parent2{
+   margin-top: -35px;
+}
+
+/* flex box challenge 2 end */
+
+/* flex box challenge 3 start */
+
+.c3-container{
+   display: flex;
+   width: 950px;
+   height: 420px;
+   margin: 100px auto;
+}
+.c3-flex1{
+   width: 150px;
+   background-color:rgb(148, 173, 154) ;
+} 
+.c3-flex2{
+   width: 800px;
+   display: flex;
+   flex-direction: column;
+
+}
+
+.flex2-part1{
+   height:100px ;
+   background-color: rgb(75, 233, 154);
+}
+
+.flex2-part2{
+   height: 220px;
+   background-color: whitesmoke;
+   
+}
+.flex2-part3{
+   height: 100px;
+   background-color: rgb(75, 233, 154);
+}
+
+
+#c3-p{
+   padding-top: 15px;
+   padding-left: 20px;
+}
+
+
+/* grid challenge 1 start */
+
+.box1{
+   margin: 50px 0px;
+   padding: 10px;
+   
+   display: grid;
+   grid-template-columns: repeat(6,1fr);
+   grid-gap: 5px 5px;
+  
+   
+   
+   
+  
+}
+
+.child{
+  
+   padding: 20px;
+    border-radius: 5px;
+   background-color:lightgreen;
+   font-size: 25px;
+   display: flex;
+   justify-content: center;
+   align-items: center;  
+
+}
+ 
+#child1{
+   
+    
+   grid-row: 1/span 12;
+   
+    
+}
+#child2{
+   
+   grid-column: 2/span 1;
+   grid-row: 1/sapan 6;
+   
+    
+   
+}
+#child3{
+   grid-column: 2/span 1;
+   grid-row: 7/span 6;
+    
+  
+}
+#child4{
+   grid-column: 3/span 1 ;
+
+   grid-row: 1/sapn 4;
+   
+}
+#child5{
+   grid-column: 3/span 1;
+
+   grid-row:5/ span 4;
+  
+}
+#child6{
+   grid-column: 3/span 1;
+ grid-row: 9/span 4;
+  
+}
+
+#child7{
+   grid-column: 4/span 1;
+   grid-row: 1/span 3;
+   
+}
+#child8{
+   grid-column: 4/span 1;
+   grid-row: 4/span 3;
+}
+#child9{
+   grid-column: 4/span 1;
+   grid-row: 7/span 3;
+   
+
+}
+#child10{
+   grid-column: 4/span 1;
+   grid-row: 10/span 3;
+    
+}
+
+#child11{
+grid-column:5/span 1 ;
+grid-row:1/span 2 ;
+}
+#child12{
+   grid-column:5/span 1 ;
+   grid-row:3/span 2 ;  
+}
+#child13{
+   grid-column:5/span 1 ;
+   grid-row:5/span 2 ;   
+}
+#child14{
+   grid-column:5/span 1 ;
+   grid-row:7/span 2 ;  
+} 
+#child15{
+   grid-column:5/span 1 ;
+   grid-row: 9/span 2; 
+}
+#child16{
+   grid-column:5/span 1 ;
+   grid-row:11/span 2 ;  
+}
+* #child17{
+   grid-column:6/span 1 ;
+   grid-row:1/span 1 ; 
+}
+#child18{
+   grid-column:6/span 1 ;
+   grid-row:2/span 1 ; 
+} 
+#child19{
+   grid-column:6/span 1 ;
+   grid-row:3/span 1 ; 
+}
+#child20{
+   grid-column:6/span 1 ;
+   grid-row:4/span 1 ; 
+}
+#child21{
+   grid-column:6/span 1 ;
+   grid-row:5/span 1 ; 
+}
+#child22{
+   grid-column:6/span 1 ;
+   grid-row:6/span 1 ; 
+}
+#child23{
+   grid-column:6/span 1 ;
+   grid-row:7/span 1 ; 
+}
+#child24{
+   grid-column:6/span 1 ;
+   grid-row:8/span 1 ; 
+}
+#child25{
+   grid-column:6/span 1 ;
+   grid-row:9/span 1 ; 
+}
+#child26{
+   grid-column:6/span 1 ;
+   grid-row:10/span 1 ; 
+}
+#child27{
+   grid-column:6/span 1 ;
+   grid-row:11/span 1 ; 
+}
+#child28{
+   grid-column:6/span 1 ;
+   grid-row:12/span 1 ; 
+}
+
+
+/* grid challenge 1 end */
+
+
+
+/* grid challenge 2 start */
+
+.box2{
+   margin: 50px 0px;
+   display: grid;
+   grid-template-columns: repeat(6, auto);
+   grid-template-rows: 100px 400px 100px ;
+   grid-gap: 5px;
+  
+   
+}
+#box2-Child{
+   background-color: rgb(240, 240, 11);
+   padding-left: 30px;
+   padding-top: 20px;
+   font-size: 20px;
+   border-radius: 5px;
+    
+}
+.box2-Child1
+{
+   grid-column: 1 /span 2;
+   grid-row: 1 /span 3; 
+}
+.box2-Child2{
+   grid-column: 3/ span 4;
+}
+
+.box2-Child3{
+   grid-column: 3 /span 3;
+}
+
+.box2-Child5{
+   grid-column: 3 /span 4;
+}
+
+/* grid challenge 2 start */
+
+
+/*css Animation */
+
+@keyframes forlogo{
+   0%{
+      background-color: rgb(30, 154, 192);
+      font-size: 22px;
+      width: 280px;
+      
+      
+   }
+   
+   
+   100%{
+      background-color: rgb(9, 199, 88);
+      font-size: 26px;
+      width: 1200px;
+      
+   }
+}
+
+.box3{
+   background-color: lightskyblue;
+   font-size: 22px;
+   width: 280px;
+   height: 100px;
+  
+   display: flex;
+    align-items: center;
+    padding-left: 20px;
+   animation: forlogo 10s ease-in-out 3s infinite alternate forwards;
+   
+}
+
